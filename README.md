@@ -714,15 +714,15 @@ Let $\delta \in \mathds{R}_+$, if
 ````
 we say the fl alg has $\delta$-accuracy loss.
 ```math
-$
+
 \mathcal{V}_{M_{sum}} = 0.9861 \;\;\;\;\; \mathcal{V}_{M_{fed}} = 0.9782
-$ 
+ 
 ```
 
 and 
 
 ```math
-$  | \mathcal{V}_{fed} - \mathcal{V}_{sum} |  = | 0.9782 - 0.9861 | =  0.0079 < 0.01 $
+  | \mathcal{V}_{fed} - \mathcal{V}_{sum} |  = | 0.9782 - 0.9861 | =  0.0079 < 0.01 
 ```
 
 Thus our FL alg has 0.01-accuracy loss
