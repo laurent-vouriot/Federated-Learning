@@ -700,12 +700,10 @@ plt.show()
 
 Lets, respectively denote the accuracy's 
 ```math 
-$
     \mathcal{V}_{sum}, \mathcal{V}_{fed}.
-$
 ```
 
-Let $\delta \in \mathds{R}_+$, if 
+Let $\delta \in \mathbb{R}_+$, if 
 
 ```math
 \begin{align}
