@@ -694,27 +694,28 @@ plt.show()
 
 Lets, respectively denote the accuracy's $\mathcal{V}_{sum}, \mathcal{V}_{fed}$. Let $\delta \in \R_+$, if 
 
+```math
 \begin{align}
     | \mathcal{V}_{fed} - \mathcal{V}_{sum} | < \delta
 \end{align} 
-
+````
 we say the fl alg has $\delta$-accuracy loss.
-
+```math
 $
 \mathcal{V}_{M_{sum}} = 0.9861 \;\;\;\;\; \mathcal{V}_{M_{fed}} = 0.9782
 $ 
-
+```
 
 and 
 
-
+```math
 $  | \mathcal{V}_{fed} - \mathcal{V}_{sum} |  = | 0.9782 - 0.9861 | =  0.0079 < 0.01 $
-
+```
 
 Thus our FL alg has 0.01-accuracy loss
 
 
-# Biblio 
+# References
 
 > [Communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/abs/1602.05629)    
 > [Federated Learning, concept and applications](https://arxiv.org/abs/1902.04885)  
