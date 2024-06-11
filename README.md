@@ -692,7 +692,14 @@ plt.show()
 
 # $\delta$-accuracy loss 
 
-Lets, respectively denote the accuracy's ```math $\mathcal{V}_{sum}, \mathcal{V}_{fed}$. Let $\delta \in \R_+$ ```, if 
+Lets, respectively denote the accuracy's 
+```math 
+$
+\mathcal{V}_{sum}, \mathcal{V}_{fed}$. Let $\delta \in \R_+,
+$
+```
+
+if 
 
 ```math
 \begin{align}
