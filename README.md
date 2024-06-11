@@ -695,11 +695,11 @@ plt.show()
 Lets, respectively denote the accuracy's 
 ```math 
 $
-\mathcal{V}_{sum}, \mathcal{V}_{fed}$. Let $\delta \in \R_+,
+    \mathcal{V}_{sum}, \mathcal{V}_{fed}.
 $
 ```
 
-if 
+Let $\delta \in \R_+$, if 
 
 ```math
 \begin{align}
