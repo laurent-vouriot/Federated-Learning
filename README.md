@@ -478,24 +478,30 @@ clients
 
 ### The general Federated Learning algorithm: 
 
+```math
 \begin{align*} 
     \min_{w\in\mathcal{R}^d} f(w) \;\;\;\;\; \text{where} \;\;\;\;\; f(w) \triangleq \frac{1}{n} \sum_{i=1}^n f_i(w)
 \end{align*}
-
+```
 in ml, typically $f_i(w) = loss(x_i,y_i,w)$,  in this notebook $loss$ is **cross entropy**
 
 
 We assume there are K clients over which the data is partitioned, with $P_k$ the set of indexes of data points on client k, with $n_k = |P_k|$. Thus, we can re-write the objective  as 
+```math
 \begin{align*}
     f(w) = \sum_{k=1}^{K} \frac{n_k}{n} F_k(w)  \;\;\;\;\; \text{where} \;\;\;\;\; F_k(w) = \frac{1}{n_k} \sum_{i \in P_k} f_i(w)
 \end{align*}
+```
 
 ### FedAveraging 
 $\eta$ = learning rate, 
 each client $k$ computes $g_k = \nabla F_k(w_t)$ the average gradient on its local data at the current model $w_t$, and the central server aggregates these gradients and applies the update : 
+
+```math
 \begin{align*}
     \forall k\;, w_{t+1}^k \leftarrow w_t - \eta g_k  \;\;\;\; \text{then} \;\;\;\; w_{t+1} \leftarrow \sum_{k=1}^K \frac{n_k}{n} w_{t+1}^k 
 \end{align*}
+```
 
 That is, each client locally takes one step of gradient descent on the current model using its local data, and the server then takes a weighted average of the resulting models.
 
@@ -699,7 +705,7 @@ $
 $
 ```
 
-Let $\delta \in \R_+$, if 
+Let $\delta \in \mathds{R}_+$, if 
 
 ```math
 \begin{align}
