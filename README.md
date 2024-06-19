@@ -700,7 +700,7 @@ plt.show()
 
 # $\delta$-accuracy loss 
 
-Lets, respectively denote the accuracy's 
+Lets, respectively denote the accuracies 
 ```math 
     \mathcal{V}_{sum}, \mathcal{V}_{fed}.
 ```
